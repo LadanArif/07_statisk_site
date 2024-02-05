@@ -27,27 +27,18 @@
             <h2> Produkter</h2>
         </div>
         <div class="main_produktliste">
-            <article class="lilleprodukt_tshirt">
-                <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
-                    alt="Sahara Team India Fanwear Round Neck Jerseys">
-                <h3> Sahara Team India Fanwear Round Neck Jersey</h3>
-                <div class="skjult">
-                    <p>T-shirt | Nike </p>
-                </div>
-                <p>DKK 895,-</p>
-                <div class="se_mere">
-                    <a href="produkt.html">Se mere</a>
-                </div>
-            </article>
-
+            <!--
             <article class="lilleprodukt_cardigan">
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="Mean Team India Cricket Jersey">
-                <h3> Mean Team India Cricket Jersey</h3>
+
+                <h3 class="produkttitel"> Mean Team India Cricket Jersey</h3>
                 <div class="skjult">
-                    <p>T-shirt | Nike </p>
+                    <p class>T-shirt | Nike </p>
                 </div>
                 <div class="discount_cardigan">
+                    <p class="mode_pris">
                     <P>DKK 1375,- </P>
+                    </p>
                     <div class="procent">
                         <p>45%</p>
                     </div>
@@ -75,8 +66,6 @@
                     <a href="produkt.html">Se mere</a>
                 </div>
             </article>
-
-            <!-- række 2  -->
 
             <article class="lilleprodukt_sortpumataske">
                 <img src="https://kea-alt-del.dk/t7/images/webp/640/1526.webp" alt="Big Cat Backpack Black">
@@ -123,12 +112,33 @@
                     <a href="produkt.html">Se mere</a>
                 </div>
             </article>
+
+            -->
         </div>
+        <div class="mode_container"></div>
 
 
     </main>
     <footer></footer>
+    <script src="script.js"></script>
 
 </body>
 
 </html>
+
+<!-- template af første model -->
+
+<template class="mode_template">
+    <article class="lilleprodukt_tshirt">
+        <img class="product_image" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+            alt="Sahara Team India Fanwear Round Neck Jerseys">
+        <h3 class="produkt_titel"> Sahara Team India Fanwear Round Neck Jersey</h3>
+        <div class="skjult">
+            <p>T-shirt | Nike </p>
+        </div>
+        <p class="mode_pris">DKK 895,-</p>
+        <div class="se_mere">
+            <a href="produkt.html">Se mere</a>
+        </div>
+    </article>
+</template>
