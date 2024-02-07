@@ -32,6 +32,11 @@ function showProduct(beerJSON) {
     productClone.querySelector(".product_image").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
     productClone.querySelector(".product_image").alt = `Picture of ${product.name} clothes`;
     productClone.querySelector(".produkt_titel").textContent = product.productdisplayname;
+
+    if (product.soldout) {
+      productClone.querySelector(".udsolgtt").classList.remove("hide");
+      productClone.querySelector("article").classList.add("Udsolgt");
+    }
     productClone.querySelector(".mode_pris").textContent = product.price;
     modeContainer.appendChild(productClone);
   });

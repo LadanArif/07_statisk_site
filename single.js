@@ -8,4 +8,8 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${id}`)
 function vis(data) {
   console.log(data);
   document.querySelector("h2").textContent = data.productdisplayname;
+  document.querySelector("p").textContent = data.price;
+  document.querySelector("h3").textContent = data.productdisplayname;
+  document.querySelector(".model").textContent = data.productdisplayname;
+  document.querySelector(".id").textContent = data.id;
 }

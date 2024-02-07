@@ -294,13 +294,13 @@ h3 {
   padding-bottom: 2%;
 }
 
-.købsboks {
+.koebsboks {
   background-color: #c1bcbc;
   margin-right: 58px;
   border-radius: 18px;
 }
 
-.købsboks h3 {
+.koebsboks h3 {
   text-align: center;
   font-size: 35px;
   letter-spacing: 1px;
@@ -310,7 +310,7 @@ h3 {
   color: white;
 }
 
-.købsboks p {
+.koebsboks p {
   margin-left: 32px;
   margin-bottom: 20px;
   color: white;
@@ -318,7 +318,7 @@ h3 {
   font-size: 28px;
 }
 
-.købsboks form {
+.koebsboks form {
   margin-left: 32px;
   font-size: 21px;
   margin-bottom: 100px;
@@ -366,4 +366,16 @@ select {
   border-radius: 10px;
   padding-right: 3%;
   padding-left: 1%;
+}
+
+.udsolgtt {
+  position: absolute;
+  background-color: rgb(119, 113, 113);
+  color: white;
+  padding: 1%;
+  border-radius: 23px;
+}
+
+.hide {
+  display: none;
 }
