@@ -370,7 +370,7 @@ select {
 
 .udsolgtt {
   position: absolute;
-  background-color: rgb(119, 113, 113);
+  background-color: rgb(106, 99, 99);
   color: white;
   padding: 1%;
   border-radius: 23px;
@@ -379,3 +379,31 @@ select {
 .hide {
   display: none;
 }
+
+.hide{
+  display: none;
+}
+.mode_data{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tilbud{
+  position: absolute;
+  background-color: rgb(31, 162, 57);
+  color: white;
+  padding: 1%;
+  border-radius: 23px;
+}
+
+
+
+
+/* .mode_data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+

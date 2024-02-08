@@ -1,6 +1,8 @@
 window.addEventListener("DOMContentLoaded", init);
+const parametre = new URLSearchParams(window.location.search);
+const kategori = parametre.get("kat");
 
-const modeURL = "https://kea-alt-del.dk/t7/api/products";
+const modeURL = "https://kea-alt-del.dk/t7/api/products?category=" + kategori;
 
 let modeTemplate;
 let modeContainer;
@@ -36,6 +38,11 @@ function showProduct(beerJSON) {
     if (product.soldout) {
       productClone.querySelector(".udsolgtt").classList.remove("hide");
       productClone.querySelector("article").classList.add("Udsolgt");
+    }
+
+    if (product.discount) {
+      productClone.querySelector(".tilbud").classList.remove("hide");
+      productClone.querySelector("article").classList.add("Udsalg");
     }
     productClone.querySelector(".mode_pris").textContent = product.price;
     modeContainer.appendChild(productClone);
