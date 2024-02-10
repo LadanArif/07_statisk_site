@@ -8,9 +8,18 @@ img {
   height: auto;
 }
 
+body {
+  background-color: whitesmoke;
+}
+
 main {
   padding-bottom: 4%;
 }
+
+/* h1 {
+  font-family: 'playfair display';
+} */
+
 
 p {
   font-size: 20px;
@@ -21,9 +30,12 @@ header a {
   font-size: 30px;
 }
 
+
 .tilbage_til_forside {
   margin-left: 48px;
   margin-top: 30px;
+  font-family: 'playfair display';
+  font-weight: bold;
 }
 
 .tilbage_til_forside a {
@@ -41,7 +53,7 @@ header a {
 }
 
 .headerimg img {
-  height: 740px;
+  height: 910px;
   object-fit: cover;
 }
 
@@ -52,6 +64,9 @@ header a {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 90px;
+  font-weight: bold;
+  font-family: 'playfair display';
+
 }
 
 nav ul {
@@ -67,6 +82,7 @@ nav ul {
   gap: 30px;
   padding-top: 390px;
   margin-left: -7px;
+  font-family: 'playfair display';
 }
 
 header li a {
@@ -89,38 +105,54 @@ a {
   margin-top: 70px;
   margin-left: 99px;
   font-size: 18px;
+  font-family: 'playfair display';
+}
+
+.kategori h1 {
+  font-size: 55px;
 }
 
 a h1 {
   margin-top: 60px;
-  margin-left: 50px;
-  text-align: center;
+  margin-left: 10px;
+  font-family: 'Playfair display';
+
 }
 
-.kategoriliste {
+.katContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  margin-top: 50px;
-  margin-left: 100px;
+  margin-top: 90px;
+  margin-left: 50px;
   margin-right: 100px;
   gap: 30px;
+  font-family: 'playfair display';
 }
 
-.kategoriliste a {
+/* sporting billeder til kategori */
+.katContainer a {
   padding: 15%;
+  /* padding-bottom: 40%;
+  padding-top: 40%;
+  padding-left: 30%;
+  padding-right: 30%; */
   background-color: #f4f1de;
-  border-radius: 6%;
+  border-radius: 3%;
   text-align: center;
   font-size: 22px;
   font-weight: bold;
+  color: black;
 }
 
 .produktertitel {
-  font-size: 28px;
-  margin-left: 102px;
-  margin-top: 55px;
+  font-size: 38px;
+  margin-left: 95px;
+  margin-top: 70px;
+  margin-bottom: 65px;
+  font-family: 'Playfair display';
 }
+
 
 .mode_container {
   display: grid;
@@ -268,19 +300,19 @@ h3 {
   margin-top: 19px;
 }
 
-.info_og_form {
+/* .info_og_form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10%;
-  margin-left: 85px;
-}
+
+} */
 
 .info {
   margin-left: 30px;
 }
 .info h2 {
-  font-size: 45px;
+  font-size: 53px;
   padding-bottom: 5%;
+  font-family: 'playfair displa'"
 }
 
 .info dt {
@@ -294,10 +326,42 @@ h3 {
   padding-bottom: 2%;
 }
 
+.img_og_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: -75px;
+  margin-top: 40px;
+}
+
+.img_og_info img {
+  margin-left: -246px;
+  margin-top: 80px;
+}
+
+.produktimg img {
+  background-color: white;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 7%;
+}
+
+.info {
+  margin-top: 89px;
+  margin-left: 0px;
+  /* background-color: white; */
+}
+
+.koeb {
+  display: grid;
+  grid-template-rows: 1fr;
+  margin-left: -62px;
+}
+
 .koebsboks {
   background-color: #c1bcbc;
-  margin-right: 58px;
+  margin-right: 117px;
   border-radius: 18px;
+  margin-top: 50px;
 }
 
 .koebsboks h3 {
@@ -369,7 +433,6 @@ select {
 }
 
 .udsolgtt {
-  position: absolute;
   background-color: rgb(106, 99, 99);
   color: white;
   padding: 1%;
@@ -380,30 +443,25 @@ select {
   display: none;
 }
 
-.hide{
+.hide {
   display: none;
 }
-.mode_data{
+.mode_data {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 }
 
-.tilbud{
-  position: absolute;
+.tilbud {
   background-color: rgb(31, 162, 57);
   color: white;
   padding: 1%;
   border-radius: 23px;
 }
 
-
-
-
-/* .mode_data {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-
+/* footer {
+  background-color: whitesmoke;
+  padding-bottom: 10%;
+  padding-top: 10%;
+} */

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <title>Produkt</title>
 </head>
 
@@ -26,40 +27,52 @@
                     Round Neck Jersey</a></li>
         </ol>
 
-        <div class="produktimg">
-            <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="ahara Team India Fanwear
-            Round Neck Jersey">
+        <div class="img_og_info">
+            <div class="produktimg">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="ahara Team India Fanwear
+                Round Neck Jersey">
+            </div>
+
+            <div class="koeb">
+                <section class="info">
+                    <h2> Produkt information</h2>
+                    <dl>
+                        <dt>Model navn</dt>
+                        <dd class="model"> Sahara Team India Fanwear Round Neck Jersey</dd>
+                        <dt>Farve</dt>
+                        <dd>Blå</dd>
+                        <dt>Varenummer</dt>
+                        <dd class="id">1163</dd>
+                    </dl>
+                </section>
+
+                <section class="koebsboks">
+                    <h3 class="koebsboks_navn">Sahara Team India Fanwear Round Neck Jersey</h3>
+                    <p class="varetxt">Nike | T-shirt</p>
+                    <form>
+                        <label for="str"> Vælg en størrelse </label>
+                        <input id="str">
+                        <select name="stoerrelse">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select>
+                        <button> Tilføj til kurv</button>
+                    </form>
+                </section>
+
+            </div>
+
         </div>
 
-        <div class="info_og_form">
-            <section class="info">
-                <h2> Produkt information</h2>
-                <dl>
-                    <dt>Model navn</dt>
-                    <dd class="model"> Sahara Team India Fanwear Round Neck Jersey</dd>
-                    <dt>Farve</dt>
-                    <dd>Blå</dd>
-                    <dt>Varenummer</dt>
-                    <dd class="id">1163</dd>
-                </dl>
-            </section>
+        <div class="vareContainer"></div>
 
-            <section class="koebsboks">
-                <h3 class="koebsboks_navn">Sahara Team India Fanwear Round Neck Jersey</h3>
-                <p>Nike | T-shirt</p>
-                <form>
-                    <label for="str"> Vælg en størrelse </label>
-                    <input id="str">
-                    <select name="stoerrelse">
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                        <option value="xl">XL</option>
-                    </select>
-                    <button> Tilføj til kurv</button>
-                </form>
-            </section>
-        </div>
+        <template class="vareTemplate">
+            <a href="produkt.html?products"> Produkter</a>
+        </template>
+
+
     </main>
     <footer></footer>
     <script src="single.js"></script>
